@@ -1,6 +1,110 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
+
+body {
+    font-size: 1.8rem;
+    height: 200vh;
+}
+
+
+.container {
+    width: 600px;
+    height: 900px;
+    border: 2px solid black;
+    margin-inline: auto;
+    margin-top: 30px;
+    padding: 24px;
+    /* text-align: center; */
+    /* display: flex; */
+    flex-direction: column;
+    justify-content: space-around;
+    /* align-items: center; */
+}
+
+.input_note{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 80px;
+    margin-top: 20px;
+}
+
+.add_note{
+    text-align: center;
+}
+
+
+
+.add_note_btn {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: greenyellow;
+    border: 2px solid black;
+    width: 500px;
+    height: 40px;
+
+    cursor: pointer;
+    font-size: 2.5rem;
+}
+
+/* the cursor should be placed at the top of the box */
+
+.add_note input {
+    height: 48px;
+    width: 500px;
+    font-size: 1.2rem;
+    margin-top: 16px;
+    margin-bottom: 6px;
+    padding: 5px;
+    border: 2px solid black;
+
+}
+
+
+.box {
+    height: 160px;
+    width: 230px;
+    border: 3px solid black;
+    font-size: 1.2rem;
+    text-align: left;
+    font-weight: normal;
+    
+}
+
+
+.notes {
+    display: flex;
+    width: 500px;
+    flex-wrap: wrap;
+    margin-inline: auto;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 40px;
+}
+
+
+.note_header {
+    height: 35px;
+    width: 100%;
+    background-color: greenyellow;
+    text-align: left;
+    padding: 5px;
+    font-weight: bold;
+    font-size: 1.4rem;
+    border-bottom: 2px solid black;
+    margin-bottom: 4px;
+}
+
+.cross_icon {
+    float: right;
+    cursor: pointer;
+}
+
