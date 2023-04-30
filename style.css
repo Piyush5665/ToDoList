@@ -60,12 +60,16 @@ body {
 .add_note input {
     height: 48px;
     width: 500px;
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     margin-top: 16px;
     margin-bottom: 6px;
-    padding: 5px;
+    padding: 4px;
     border: 2px solid black;
 
+}
+
+.add_note input::placeholder{
+    text-align: center;
 }
 
 
