@@ -3,12 +3,19 @@ let note_headers = document.getElementsByClassName("note_header");
 let btn = document.getElementById("add");
 var count = 0;
 
+
 btn.addEventListener("click", () => {
   if (input_field.value) {
-    addTask();
+    count++;
+
+    localStorage.setItem(`Task${count}`, input_field.value);
+    let item = localStorage.getItem(`Task${count}`);
+
+    addTask(item);
     input_field.value = "";
   }
 });
+
 
 input_field.addEventListener("keydown", (event) => {
   if (event.key === "Enter" && input_field.value) {
@@ -18,14 +25,15 @@ input_field.addEventListener("keydown", (event) => {
     let item = localStorage.getItem(`Task${count}`);
 
     addTask(item);
-
     input_field.value = "";
   }
 });
 
+
 const notes = document.querySelector(".notes");
 
 function addTask(item) {
+
   let task_box = document.createElement("div");
   task_box.classList.add("box");
 
